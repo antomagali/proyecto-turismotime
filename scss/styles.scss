@@ -1,0 +1,560 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #fa7c60;
+
+    &:hover {
+    background-color: #db9b8d;
+    }
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: #fa7c60;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+
+    .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #fa7c60;
+    font-size: 1.6em;
+    }
+
+    .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    }
+
+    a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+    &:hover {
+        color: #fa7c60;
+    }
+    }
+}
+
+  /* PAG HOME MOBILE */
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/londres.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h1 {
+    color: white;
+    }
+
+    button {
+    font-size: 1.75em;
+    }
+}
+
+#somos-proya .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas {
+    .container {
+    text-align: center;
+    padding: 250px 12px;
+    }
+
+    li {
+    margin: 16px 0px;
+    font-weight: bold;
+    }
+}
+
+  /* PAG ACTIVIDADES MOBILE  */
+
+#nuestros-programas {
+    background-color: rgba(30, 30, 30, 0.979);
+    color: white;
+    text-align: center;
+
+    .container {
+    padding: 150px 12px;
+    }
+
+    h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+    color: #fa7c60;
+    }
+
+    p {
+    display: none;
+    }
+
+    .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+    }
+}
+
+.carta {
+    &:first-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/monumento.jpeg");
+    }
+
+    &:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cafeteriaa.jpeg");
+    }
+
+    &:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/tturimo.jpg");
+    }
+}
+
+  /* PAG HOSPEDAJE MOBILE */
+
+#heroUno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/lugares.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h1 {
+    color: white;
+    }
+}
+
+#somos-hospe .container, #somos-hospeuno .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+
+    p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+    }
+
+    .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    }
+}
+  /* PAG CULTURA MOBILE */
+#heroDos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/mar.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h1 {
+    color: white;
+    }
+}
+
+#nuestros-programas {
+    background-color: rgba(231, 224, 224, 0.979);
+    color: white;
+    text-align: center;
+
+    .container {
+    padding: 150px 12px;
+    }
+}
+
+#nuestros-prog {
+    h2 {
+    margin-top: 0;
+    font-size: 2.0em;
+    color: #fa7c60;
+    }
+
+    p {
+    display: none;
+    }
+}
+
+#nuestros-programas .cartados {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.cartados {
+    &:first-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/videos.jpeg");
+    }
+
+    &:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/monumento2.jpg");
+    }
+
+    &:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/turista.jpeg");
+    }
+}
+
+  /* PAG CONTACTO MOBILE */
+
+#nuestros-pro {
+    background-color: rgba(231, 224, 224, 0.979);
+    color: white;
+    text-align: center;
+
+    .container {
+    padding: 150px 12px;
+    }
+}
+
+#nuestros-prog {
+    h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+    color: #fa7c60;
+    }
+
+    p {
+    display: none;
+    }
+}
+
+#nuestros-pro .cartadoss {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.cartadoss:first-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/pexels-photo-281962.webp");
+}
+
+@media (min-width: 850px) {
+    header {
+    position: fixed;
+    width: 100%;
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    }
+
+    /* PAG HOME ESCRITORIO */
+
+    #hero h1 {
+    font-size: 5em;
+    }
+
+    #somos-proya {
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h2 {
+        margin-top: 0px;
+    }
+
+    .img-container {
+        background-image: url("/img/mexico.jpeg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    }
+
+    #caracteristicas {
+    background-image: url("media/background-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 500px) 120px;
+
+    .container {
+        text-align: initial;
+    }
+
+    ul {
+        margin-left: 100px;
+    }
+    }
+
+    #final {
+    h2 {
+        font-size: 5em;
+    }
+
+    button {
+        font-size: 2em;
+    }
+    }
+
+    /* PAG ACTIVIDADES ESCRITORIO */
+
+    #nuestros-programas {
+    .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 4em;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    .carta {
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    }
+
+    .carta {
+    &:first-child {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/monumento.jpeg");
+    }
+
+    &:nth-child(2) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cafeteriaa.jpeg");
+    }
+
+    &:nth-child(3) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/tturimo.jpg");
+    }
+    }
+
+    /* PAGINA HOSPEDAJE ESCRITORIO */
+
+    #somos-hospe {
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &.texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h2 {
+        margin-top: 0px;
+    }
+
+    .img-container {
+        background-image: url("/img/air.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    }
+
+    #somos-hospeuno {
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &.texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h2 {
+        margin-top: 0px;
+    }
+
+    .imguno-container {
+        background-image: url("/img/bookingdos.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    }
+
+    footer .container {
+    justify-content: flex-end;
+    }
+}
+
+  /* PAG CULTURA ESCRITORIO */
+
+#nuestros-programas {
+    .programasdos {
+    display: flex;
+    justify-content: center;
+    }
+
+    p {
+    display: block;
+    margin-bottom: 30px;
+    }
+}
+
+#nuestros-prog {
+    h2 {
+    font-size: 2em;
+    }
+
+    h3 {
+    margin-top: 0;
+    }
+
+    .cartados {
+    padding: 50px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(19, 18, 18, 0.795);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.cartados {
+    &:first-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/videos.jpeg");
+    }
+
+    &:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/monumento2.jpg");
+    }
+
+    &:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/turista.jpeg");
+    }
+}
+
+  /* PAG CONTACTO ESCRITORIO */
+
+@media (min-width: 1200px) {
+    #caracteristicas {
+    background-position-x: calc(100vw - 800px);
+    }
+}
